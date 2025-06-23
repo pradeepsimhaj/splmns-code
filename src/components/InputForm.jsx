@@ -1,61 +1,9 @@
-// import React, { useState } from 'react';
-// import styled from 'styled-components';
-
-// const FormWrapper = styled.div`
-//   position: absolute; top: 20px; left: 20px; z-index: 10;
-//   background: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px;
-// `;
-
-// export default function InputForm({ onSubmit }) {
-//   const [text, setText] = useState('');
-//   const handle = e => {
-//     e.preventDefault();
-//     if (!text.trim()) return;
-//     onSubmit(text.trim());
-//     setText('');
-//   };
-
-//   return (
-//     <FormWrapper>
-//       <form onSubmit={handle}>
-//         <input
-//           type="text" value={text}
-//           placeholder="Enter name/phrase"
-//           onChange={e => setText(e.target.value)}
-//           maxLength={30}
-//         />
-//         <button type="submit">Launch</button>
-//       </form>
-//     </FormWrapper>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
 const FormWrapper = styled.div`
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.6);

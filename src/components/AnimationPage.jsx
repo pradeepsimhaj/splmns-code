@@ -11,7 +11,7 @@ const PageWrapper = styled.div`
 `;
 
 const NavButton = styled.button`
-  position: relative; /* Restored to enable top and right positioning */
+  position: relative;
   top: 20px;
   right: 0px;
   display: flex;
